@@ -1,0 +1,225 @@
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+activationkey = "VlTNgWQwx8VkxAOopNTSzqgCSS2IT3r0WkpmvyEo"
+discord = 'discord.gg/nFjWnJvm'
+versia = 'v.3.6.5b'
+mas = Instance.new("Model",game:GetService("Lighting"))
+ScreenGui0 = Instance.new("ScreenGui")
+Frame1 = Instance.new("Frame")
+TextLabel2 = Instance.new("TextLabel")
+TextBox3 = Instance.new("TextBox")
+TextLabel4 = Instance.new("TextLabel")
+TextButton5 = Instance.new("TextButton")
+LocalScript6 = Instance.new("LocalScript")
+TextBox7 = Instance.new("TextBox")
+LocalScript8 = Instance.new("LocalScript")
+LocalScript9 = Instance.new("LocalScript")
+TextLabel10 = Instance.new("TextLabel")
+TextLabel11 = Instance.new("TextLabel")
+LocalScript12 = Instance.new("LocalScript")
+ScreenGui0.Name = "HSusdfes&E*f423dXcfgD"
+ScreenGui0.Parent = mas
+ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui0.DisplayOrder = 1
+Frame1.Name = "GetKey"
+Frame1.Parent = ScreenGui0
+Frame1.Position = UDim2.new(0.404191613, 0, 0.421400607, 0)
+Frame1.Size = UDim2.new(0.191245437, 0, 0.121408708, 0)
+Frame1.BackgroundColor = BrickColor.new("Black")
+Frame1.BackgroundColor3 = Color3.new(0.184314, 0.192157, 0.211765)
+TextLabel2.Name = "Title"
+TextLabel2.Parent = Frame1
+TextLabel2.Size = UDim2.new(1.00000012, 0, 0.236117527, 0)
+TextLabel2.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel2.BackgroundTransparency = 1
+TextLabel2.Font = Enum.Font.GothamBold
+TextLabel2.FontSize = Enum.FontSize.Size14
+TextLabel2.Text = "MAMBA HUB"
+TextLabel2.TextColor = BrickColor.new("Institutional white")
+TextLabel2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14
+TextLabel2.TextWrap = true
+TextLabel2.TextWrapped = true
+TextBox3.Name = "putcode"
+TextBox3.Parent = Frame1
+TextBox3.Position = UDim2.new(0.228882834, 0, 0.427480906, 0)
+TextBox3.Size = UDim2.new(0.544959128, 0, 0.137404576, 0)
+TextBox3.BackgroundColor = BrickColor.new("Dark taupe")
+TextBox3.BackgroundColor3 = Color3.new(0.25098, 0.266667, 0.294118)
+TextBox3.Font = Enum.Font.Gotham
+TextBox3.FontSize = Enum.FontSize.Size14
+TextBox3.Text = "..."
+TextBox3.TextColor = BrickColor.new("Institutional white")
+TextBox3.TextColor3 = Color3.new(1, 1, 1)
+TextBox3.TextScaled = true
+TextBox3.TextSize = 14
+TextBox3.TextWrap = true
+TextBox3.TextWrapped = true
+TextLabel4.Name = "ksstm"
+TextLabel4.Parent = Frame1
+TextLabel4.Position = UDim2.new(0, 0, 0.212420046, 0)
+TextLabel4.Size = UDim2.new(1, 0, 0.206106871, 0)
+TextLabel4.BackgroundColor = BrickColor.new("Light grey")
+TextLabel4.BackgroundColor3 = Color3.new(0.756863, 0.760784, 0.764706)
+TextLabel4.BackgroundTransparency = 1
+TextLabel4.Font = Enum.Font.SourceSans
+TextLabel4.FontSize = Enum.FontSize.Size14
+TextLabel4.Text = "Activate the key to get access to the script"
+TextLabel4.TextColor = BrickColor.new("Institutional white")
+TextLabel4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel4.TextScaled = true
+TextLabel4.TextSize = 14
+TextLabel4.TextWrap = true
+TextLabel4.TextWrapped = true
+TextButton5.Name = "rdm"
+TextButton5.Parent = Frame1
+TextButton5.Position = UDim2.new(0.228882849, 0, 0.655654967, 0)
+TextButton5.Size = UDim2.new(0.544959128, 0, 0.155329481, 0)
+TextButton5.BackgroundColor = BrickColor.new("Forest green")
+TextButton5.BackgroundColor3 = Color3.new(0, 0.54902, 0)
+TextButton5.Font = Enum.Font.Gotham
+TextButton5.FontSize = Enum.FontSize.Size14
+TextButton5.Text = "Redeem Key"
+TextButton5.TextColor = BrickColor.new("Institutional white")
+TextButton5.TextColor3 = Color3.new(1, 1, 1)
+TextButton5.TextScaled = true
+TextButton5.TextSize = 14
+TextButton5.TextWrap = true
+TextButton5.TextWrapped = true
+LocalScript6.Parent = TextButton5
+table.insert(cors,sandbox(LocalScript6,function()
+local key = script.Parent.Parent.putcode
+local getkey = script.Parent.Parent
+local redeem = script.Parent
+
+redeem.MouseButton1Click:Connect(function()
+	if key.Text == activationkey then
+		print('rabotaet')
+		script.Parent.Parent.Parent:Destroy()
+	end
+end)
+
+--loadstring(game:HttpGet('https://raw.githubusercontent.com/m4mbaleila/mambahub/main/%3F%26sheesh'))()
+end))
+TextBox7.Name = "gtk"
+TextBox7.Parent = Frame1
+TextBox7.Position = UDim2.new(0, 0, 0.890677869, 0)
+TextBox7.Size = UDim2.new(1, 0, 0.0763358772, 0)
+TextBox7.BackgroundColor = BrickColor.new("Dark taupe")
+TextBox7.BackgroundColor3 = Color3.new(0.25098, 0.266667, 0.294118)
+TextBox7.BackgroundTransparency = 1
+TextBox7.Font = Enum.Font.Gotham
+TextBox7.FontSize = Enum.FontSize.Size14
+TextBox7.Text = ""
+TextBox7.TextColor = BrickColor.new("Institutional white")
+TextBox7.TextColor3 = Color3.new(1, 1, 1)
+TextBox7.TextScaled = true
+TextBox7.TextSize = 14
+TextBox7.TextWrap = true
+TextBox7.TextWrapped = true
+LocalScript8.Parent = TextBox7
+table.insert(cors,sandbox(LocalScript8,function()
+script.Parent.ClearTextOnFocus = false
+end))
+LocalScript9.Parent = Frame1
+table.insert(cors,sandbox(LocalScript9,function()
+local UIS = game:GetService('UserInputService')
+local frame = script.Parent
+local dragToggle = nil
+local dragSpeed = 0.15
+local dragStart = nil
+local startPos = nil
+
+local function updateInput(input)
+	local delta = input.Position - dragStart
+	local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+end
+
+frame.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+		dragToggle = true
+		dragStart = input.Position
+		startPos = frame.Position
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragToggle = false
+			end
+		end)
+	end
+end)
+
+UIS.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		if dragToggle then
+			updateInput(input)
+		end
+	end
+end)
+end))
+TextLabel10.Name = "vrsion"
+TextLabel10.Parent = Frame1
+TextLabel10.Position = UDim2.new(0.809828818, 0, 0, 0)
+TextLabel10.Size = UDim2.new(0.190171421, 0, 0.137781456, 0)
+TextLabel10.BackgroundColor = BrickColor.new("Light grey")
+TextLabel10.BackgroundColor3 = Color3.new(0.756863, 0.760784, 0.764706)
+TextLabel10.BackgroundTransparency = 1
+TextLabel10.Font = Enum.Font.SourceSans
+TextLabel10.FontSize = Enum.FontSize.Size14
+TextLabel10.Text = ""
+TextLabel10.TextColor = BrickColor.new("Institutional white")
+TextLabel10.TextColor3 = Color3.new(1, 1, 1)
+TextLabel10.TextScaled = true
+TextLabel10.TextSize = 14
+TextLabel10.TextWrap = true
+TextLabel10.TextWrapped = true
+TextLabel11.Name = "trk"
+TextLabel11.Parent = Frame1
+TextLabel11.Position = UDim2.new(0.809828818, 0, 0, 0)
+TextLabel11.Size = UDim2.new(0.190171421, 0, 0.137781456, 0)
+TextLabel11.BackgroundColor = BrickColor.new("Light grey")
+TextLabel11.BackgroundColor3 = Color3.new(0.756863, 0.760784, 0.764706)
+TextLabel11.BackgroundTransparency = 1
+TextLabel11.Font = Enum.Font.SourceSans
+TextLabel11.FontSize = Enum.FontSize.Size14
+TextLabel11.Text = ""
+TextLabel11.TextColor = BrickColor.new("Institutional white")
+TextLabel11.TextColor3 = Color3.new(1, 1, 1)
+TextLabel11.TextScaled = true
+TextLabel11.TextSize = 14
+TextLabel11.TextTransparency = 1
+TextLabel11.TextWrap = true
+TextLabel11.TextWrapped = true
+LocalScript12.Name = "Info"
+LocalScript12.Parent = ScreenGui0
+table.insert(cors,sandbox(LocalScript12,function()
+
+script.Parent.GetKey.vrsion.Text = versia
+script.Parent.GetKey.gtk.Text = discord
+end))
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
